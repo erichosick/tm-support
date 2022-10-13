@@ -10,7 +10,7 @@
     "JSONpath"
   ],
   "author": "Eric Hosick <erichosick@gmail.com>",
-  "homepage": "https://github.com/erichosick/tm-support",
+  "homepage": "https://github.com/erichosick/tm-support/tree/main/packages/object-json-path",
   "bugs": {
     "url": "https://github.com/erichosick/tm-support/issues",
     "email": "erichosick@gmail.com"
