@@ -28,7 +28,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
-    "build:ts": "tsc",
-    "build:ts:watch": "tsc --watch"
+    "build": "tsc",
+    "build:watch": "tsc --watch"
   }
 }

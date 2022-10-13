@@ -19,11 +19,12 @@
     "email": "erichosick@gmail.com"
   },
   "scripts": {
-    "build:js": "yarn lerna run build:ts",
-    "build:js:watch": "yarn lerna run build:ts:watch",
+    "build": "yarn lerna run build",
+    "build:watch": "yarn lerna run build:watch",
     "test": "jest",
     "test:watch": "jest --watch --coverage --collectCoverageFrom=\"./packages/**/src/*.ts\" --verbose",
-    "test:watch:no-coverage": "jest --watch --verbose"
+    "test:watch:no-coverage": "jest --watch --verbose",
+    "publish:all": "yarn test && yarn build && yarn lerna publish"
   },
   "workspaces": [
     "packages/*"

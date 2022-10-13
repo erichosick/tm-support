@@ -22,8 +22,11 @@ yarn test:watch
 yarn test
 
 # build javascript library from typescript library
-yarn build:js
+yarn build
 
 # continuously build javascript library from typescript library
-yarn build:js:watch
+yarn build:watch
+
+# publish all packages that have changed to npmjs.com
+yarn publish:all
 ```
