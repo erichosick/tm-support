@@ -25,10 +25,11 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch"
-  }
+  },
+  "gitHead": "b7124eafe8407b1768353aa427f4eb9488b81510"
 }
