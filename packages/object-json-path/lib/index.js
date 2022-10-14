@@ -79,15 +79,3 @@ export const getFromObject = (jsonObject, path) => {
     }
     return current[propertyName];
 };
-// build an admin using one path/value at a time.
-const adminUser = {};
-insertIntoObject(adminUser, { path: 'fullName', value: 'Happy Admin' });
-insertIntoObject(adminUser, { path: 'privileges', value: ['admin', 'reader'] });
-// build a user providing multiple path/values at the same time.
-const user = {};
-insertIntoObject(user, [
-    { path: 'name.first', value: 'Happy' },
-    { path: 'name.last', value: 'User' },
-]);
-const value = getFromObject(user, 'name.first');
-console.log(value);
