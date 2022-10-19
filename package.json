@@ -28,7 +28,7 @@
     "test:integration": "jest --config=./jest.integration.config.ts",
     "test:integration:watch": "jest --config=./jest.integration.config.ts --watch --coverage --verbose",
     "test:integration:watch:no-coverage": "jest --config=./jest.integration.config.ts --watch --verbose",
-    "publish:all": "yarn test && yarn build && yarn lerna publish",
+    "publish:all": "yarn test:integration && yarn build && yarn lerna publish",
     "lerna:create": "yarn lerna create -y"
   },
   "workspaces": [
