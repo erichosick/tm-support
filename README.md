@@ -4,6 +4,8 @@ A [Lerna](https://lerna.js.org/) mono repo which contains:
 
 * [object-json-path](./packages/object-json-path/README.md) - Using a small subset of [JSONpath](https://jsontostring.com/jsonpath/) features, object-json-path gets or sets a value on a javascript object.
 
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+
 ## Development
 
 Development requirements:
