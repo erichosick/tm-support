@@ -37,7 +37,7 @@ yarn publish:all
 
 ```bash
 # verify test run
-yarn test
+yarn test:integration
 
 # verify build works
 yarn build
