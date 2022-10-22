@@ -1,0 +1,46 @@
+{
+  "name": "wp-context",
+  "version": "0.0.1",
+  "description": "Pull values from different sources on a webpage (cookies, heading, web page parameters, etc. and place them in a json object for later processing.",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "object",
+    "builder",
+    "html context"
+  ],
+  "author": "Eric Hosick <erichosick@gmail.com>",
+  "homepage": "https://github.com/erichosick/tm-support/tree/main/packages/wp-context",
+  "bugs": {
+    "url": "https://github.com/erichosick/tm-support/issues",
+    "email": "erichosick@gmail.com"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "main": "./dist/bundle.js",
+  "directories": {
+    "lib": "lib",
+    "dist": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "develop": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "build:watch": "webpack --mode production --watch",
+    "test:browsers": "rm -rf dist && karma start karma.conf.ts --single-run true && yarn build",
+    "test:browsers:watch": "karma start karma.conf.ts"
+  },
+  "dependencies": {
+    "js-cookie": "^3.0.1",
+    "object-json-path": "^0.0.7"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.2"
+  }
+}

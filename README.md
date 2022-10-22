@@ -57,7 +57,7 @@ yarn publish:all
 
 ```bash
 yarn lerna:create {package-name}
-# Example yarn lerna:create wp-context-builder2
+# Example yarn lerna:create wp-context
 ```
 
 ### Linking To Another Project
@@ -67,6 +67,10 @@ cd ./packages/{package-name}
 yarn lerna add {package-name-linking-to}
 
 # example
-cd ./package/wp-context-builder
+cd ./package/wp-context
 yarn lerna add object-json-path
 ```
+
+# TODO
+
+* Add documentation on how to run tests across all packages.

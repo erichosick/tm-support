@@ -84,7 +84,7 @@ However, this requires knowledge of the object's shape at development time.
 
 ## Example Usage
 
-We want to build an object based on web page context dynamically. We pull context from different sources on the page, such as HTML parameters, cookies, local storage, etc., and store them in an object. Instead of composing the final object using javascript, we define the mapping between a given context value and the object using JSON. The JSON is passed to a builder, wp-context-builder for example, which uses this library to get and set values to a javascript object.
+We want to build an object based on web page context dynamically. We pull context from different sources on the page, such as HTML parameters, cookies, local storage, etc., and store them in an object. Instead of composing the final object using javascript, we define the mapping between a given context value and the object using JSON. The JSON is passed to a builder, wp-context for example, which uses this library to get and set values to a javascript object.
 
 ## Development
 

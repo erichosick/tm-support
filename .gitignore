@@ -5,3 +5,4 @@ npm-debug.log
 .idea
 coverage
 **/yarn-error.log
+**/_karma_webpack_

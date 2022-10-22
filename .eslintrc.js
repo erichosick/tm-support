@@ -3,6 +3,10 @@ module.exports = {
     browser: true,
     es2021: true,
     'jest/globals': true,
+
+    // Stops error: 'webpack' should be listed in the project's dependencies.
+    // but also doesn't stop us from importing webpack into our actual code.
+    webpack: true,
   },
   extends: [
     'airbnb-base',
@@ -20,6 +24,12 @@ module.exports = {
     'jest',
   ],
   rules: {
+    // Stop errors dev development dependencies such as with webpack...
+    // 'webpack' should be listed in the project's dependencies.
+    // TODO: It looks like projectDependencies: false is enough but we would like to make sure
+    // only actual test and configuration files are tested for. Right now, even
+    // code files are excluded.
+    // 'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.spec.ts', '**/*.config.ts'], projectDependencies: false }],
     // see https://stackoverflow.com/questions/55807329/why-eslint-throws-no-unused-vars-for-typescript-interface
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
