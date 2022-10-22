@@ -12,6 +12,6 @@ const tm = {
   uuidGenerate,
 };
 
-// window.tm = tm;
+window.tm = tm;
 
 export default tm;

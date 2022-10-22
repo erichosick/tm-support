@@ -1,6 +1,8 @@
 declare global {
-    interface tm {
-        uuidGenerate(): string;
+    interface Window {
+        tm: {
+            uuidGenerate(): string;
+        };
     }
 }
 export {};
