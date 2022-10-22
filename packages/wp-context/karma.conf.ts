@@ -24,7 +24,7 @@ const karamConfigOptions: karma.ConfigOptions = {
   },
   reporters: ["progress", "karma-typescript"],
   // browsers: ["Chrome"],
-  browsers: ["ChromeHeadless"],
+  browsers: ["ChromeHeadless", "Chrome"],
   webpack: webpackConfig,
 
   autoWatchBatchDelay: 250,
