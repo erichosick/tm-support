@@ -1,6 +1,6 @@
 {
   "name": "wp-context",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pull values from different sources on a webpage (cookies, heading, web page parameters, etc. and place them in a json object for later processing.",
   "keywords": [
     "javascript",
