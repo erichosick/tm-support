@@ -2,7 +2,9 @@
 
 Using a small subset of [JSONpath](https://jsontostring.com/jsonpath/) features, **object-json-path** gets or sets a value in a JSON object.
 
-A typescript library.
+## Features
+
+* A 100% typescript library.
 
 ## Usage
 

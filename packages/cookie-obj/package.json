@@ -1,0 +1,28 @@
+{
+  "name": "cookie-obj",
+  "version": "0.0.1",
+  "description": "Converts the [Http cookie format](https://developer.mozilla.org/en-US/docs/web/api/document/cookie) (document.cookie) to a javascript object: the cookie name becomes the object property name.",
+  "keywords": [
+    "javascript",
+    "node",
+    "document.cookie"
+  ],
+  "author": "Eric Hosick <erichosick@gmail.com>",
+  "homepage": "https://github.com/erichosick/tm-support/tree/main/packages/cookie-obj",
+  "bugs": {
+    "url": "https://github.com/erichosick/tm-support/issues",
+    "email": "erichosick@gmail.com"
+  },
+  "license": "MIT",
+  "main": "src/index.ts",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
