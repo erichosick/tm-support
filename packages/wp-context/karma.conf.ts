@@ -17,14 +17,15 @@ const karamConfigOptions: karma.ConfigOptions = {
   frameworks: ["jasmine", "karma-typescript"],
   files: [
     "src/**/*.ts", // *.tsx for React Jsx
-    "__tests__/**/*.ts"
+    "__tests__/**/*.ts",
   ],
   preprocessors: {
     "**/*.ts": "karma-typescript" // *.tsx for React Jsx
   },
   reporters: ["progress", "karma-typescript"],
   // browsers: ["Chrome"],
-  browsers: ["ChromeHeadless", "Chrome"],
+  // browsers: ["ChromeHeadless", "Chrome"],
+  browsers: ["ChromeHeadless"],
   webpack: webpackConfig,
 
   autoWatchBatchDelay: 250,

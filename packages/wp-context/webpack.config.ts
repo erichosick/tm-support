@@ -18,6 +18,7 @@ const webpackConfig: Webpack.Configuration = {
     // https://webpack.js.org/configuration/resolve/#resolvemodules
     modules: [
       'node_modules',
+      "../../node_modules",
     ],
   },
   module: {

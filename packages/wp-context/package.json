@@ -31,14 +31,14 @@
   },
   "scripts": {
     "develop": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
-    "build:watch": "webpack --mode production --watch",
+    "build": "rm -rf ./dist && webpack --mode production",
+    "build:watch": "rm -rf ./dist && webpack --mode production --watch",
     "test:browsers": "rm -rf dist && karma start karma.conf.ts --single-run true && yarn build",
     "test:browsers:watch": "karma start karma.conf.ts"
   },
   "dependencies": {
-    "js-cookie": "^3.0.1",
-    "object-json-path": "^0.1.0"
+    "object-json-path": "^0.1.0",
+    "ts-deepmerge": "^4.0.0"
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.2"
