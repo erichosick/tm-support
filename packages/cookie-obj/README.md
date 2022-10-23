@@ -1,4 +1,4 @@
-# `cookies-to-obj`
+# `cookies-obj`
 
 Converts the [Http cookie format](https://developer.mozilla.org/en-US/docs/web/api/document/cookie) (document.cookie) to a javascript object: the cookie name becomes the object property name.
 
