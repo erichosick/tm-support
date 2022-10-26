@@ -1,1 +1,0 @@
-{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../../../object-json-path/src/index.ts"],"names":[],"mappings":"AAGA,MAAM,WAAW,aAAa;IAK5B,IAAI,EAAE,MAAM,CAAA;IAMZ,KAAK,EAAE,OAAO,CAAA;CACf;AAED,oBAAY,cAAc,GAAG,aAAa,EAAE,CAAC;AAyB7C,eAAO,MAAM,gBAAgB,eACf,OAAO,kBACH,aAAa,GAAG,cAAc,KAC7C,OA6BF,CAAC;AAQF,eAAO,MAAM,aAAa,eACZ,OAAO,QACb,MAAM,QAsBb,CAAC"}
