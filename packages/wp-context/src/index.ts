@@ -1,23 +1,34 @@
 import './globals';
-
-/**
- * Generates a uuid using createObjectUrl. The uuid returned is a string. Use
- * the https://www.npmjs.com/package/uuid library to convert the string to a
- * uuid.
- * @returns A string uuid.
- */
-const uuidGenerate = (): string => {
-  // generate a url using createObjectURL
-  // see https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL
-  const url = URL.createObjectURL(new Blob());
-  // need to revoke the url now.
-  // See https://developer.mozilla.org/en-US/docs/Web/API/URL/revokeObjectURL
-  URL.revokeObjectURL(url);
-  return url.substring(url.lastIndexOf("/") + 1);
-}
+import uuidGenerate from './uuid-generate';
+// import wpContextBuild from './wp-context-build';
+// import wpContextApply from './wp-context-apply';
+// import {
+//   wpSessionInit,
+//   wpSessionGet,
+//   wpSessionSet,
+// } from './wp-context-session';
+import { tmContextConfigDefault } from './defaults';
+import {
+  getElementFromElements,
+  getElement,
+  getFormElement
+} from './wp-html';
 
 const tm = {
   uuidGenerate,
+  // wpContextApply,
+  // wpContextBuild,
+  // wpSessionInit,
+  // wpSessionGet,
+  // wpSessionSet,
+  defaults: {
+    tmContextConfigDefault,
+  },
+  html: {
+    getElementFromElements,
+    getElement,
+    getFormElement,
+  },
 };
 
 window.tm = tm;

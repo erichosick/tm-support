@@ -10,9 +10,9 @@
     "JSONpath"
   ],
   "author": "Eric Hosick <erichosick@gmail.com>",
-  "homepage": "https://github.com/erichosick/tm-support/tree/main/packages/object-json-path",
+  "homepage": "https://github.com/erichosick/trkm/tree/main/packages/object-json-path",
   "bugs": {
-    "url": "https://github.com/erichosick/tm-support/issues",
+    "url": "https://github.com/erichosick/trkm/issues",
     "email": "erichosick@gmail.com"
   },
   "license": "MIT",
@@ -27,5 +27,8 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "gitHead": "b7124eafe8407b1768353aa427f4eb9488b81510"
+  "gitHead": "b7124eafe8407b1768353aa427f4eb9488b81510",
+  "dependencies": {
+    "cookie-obj": "^0.0.1"
+  }
 }
