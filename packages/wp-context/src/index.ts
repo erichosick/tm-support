@@ -1,12 +1,12 @@
 import './globals';
 import uuidGenerate from './uuid-generate';
-import wpContextBuild from './wp-context-build';
-import wpContextApply from './wp-context-apply';
-import {
-  wpSessionInit,
-  wpSessionGet,
-  wpSessionSet,
-} from './wp-context-session';
+// import wpContextBuild from './wp-context-build';
+// import wpContextApply from './wp-context-apply';
+// import {
+//   wpSessionInit,
+//   wpSessionGet,
+//   wpSessionSet,
+// } from './wp-context-session';
 import { tmContextConfigDefault } from './defaults';
 import {
   getElementFromElements,
@@ -16,11 +16,11 @@ import {
 
 const tm = {
   uuidGenerate,
-  wpContextApply,
-  wpContextBuild,
-  wpSessionInit,
-  wpSessionGet,
-  wpSessionSet,
+  // wpContextApply,
+  // wpContextBuild,
+  // wpSessionInit,
+  // wpSessionGet,
+  // wpSessionSet,
   defaults: {
     tmContextConfigDefault,
   },

@@ -1,8 +1,7 @@
-// see https://webpack.js.org/configuration/ for documentation
-
 import * as path from 'path';
 import * as Webpack from 'webpack';
 
+// documentation: https://webpack.js.org/configuration/
 const webpackConfig: Webpack.Configuration = {
   mode: 'development',
   entry: './src/index.ts',
@@ -17,8 +16,7 @@ const webpackConfig: Webpack.Configuration = {
 
     // https://webpack.js.org/configuration/resolve/#resolvemodules
     modules: [
-      'node_modules',
-      "../../node_modules",
+      "node_modules",
     ],
   },
   module: {
@@ -26,7 +24,6 @@ const webpackConfig: Webpack.Configuration = {
       {
         test: /\.ts?$/,
         use: 'ts-loader',
-        exclude: [/node_modules/],
       },
     ],
   },

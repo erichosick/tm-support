@@ -1,5 +1,5 @@
 {
-  "name": "tm-support",
+  "name": "trkm",
   "version": "0.0.1",
   "description": "Contains tracking madness support projects.",
   "keywords": [
@@ -13,9 +13,9 @@
   "contributors": [],
   "license": "SEE LICENSE IN LICENSE.md",
   "private": true,
-  "homepage": "https://github.com/erichosick/tm-support",
+  "homepage": "https://github.com/erichosick/trkm",
   "bugs": {
-    "url": "https://github.com/erichosick/tm-support/issues",
+    "url": "https://github.com/erichosick/trkm/issues",
     "email": "erichosick@gmail.com"
   },
   "scripts": {

@@ -3,24 +3,25 @@ import * as karma from 'karma';
 
 import webpackConfig from './webpack.config';
 
-const outputPath = path.join(__dirname, '_karma_webpack_');
 
 // use a different output path for testing than building
 if (webpackConfig?.output?.path) {
-  webpackConfig.output.path = outputPath;
+  webpackConfig.output.path = path.join(__dirname, '_karma_webpack_');
 } else {
   throw Error('Webpack.config must have an output.path configured.');
 }
 
-
 const karamConfigOptions: karma.ConfigOptions = {
-  frameworks: ["jasmine", "karma-typescript"],
+  frameworks: ["jasmine", "karma-typescript", "karma-typescript_color"],
   files: [
     "src/**/*.ts", // *.tsx for React Jsx
-    "__tests__/**/*.ts",
+    // "__tests__/**/*.ts",
+    // "../**/src/**/*.ts"
   ],
   preprocessors: {
-    "**/*.ts": "karma-typescript" // *.tsx for React Jsx
+    "**/*.ts": "karma-typescript", // *.tsx for React Jsx
+    // "__tests__/**/*.ts": "karma-typescript",
+    // "../**/src/**/*.ts": "karma-typescript"
   },
   reporters: ["progress", "karma-typescript"],
   // browsers: ["Chrome"],
@@ -38,7 +39,10 @@ const karamConfigOptions: karma.ConfigOptions = {
 // out how to get the write ConfigOptions type for 
 
 const config = (config: karma.Config) => {
-  config.set(karamConfigOptions);
+  config.set({
+    ...karamConfigOptions,
+    logLevel: config.LOG_DEBUG,
+  });
 };
 
 export default config;

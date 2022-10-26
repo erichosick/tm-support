@@ -24,16 +24,16 @@ interface tmDefaults {
 
 interface tmGlobal {
   uuidGenerate(): string
-  wpContextApply(
-    context: unknown,
-    apply: WpDestination | WpDestinations
-  ): void
-  wpContextBuild(
-    config: WpContextConfigs | WpContextConfig
-  ): unknown
-  wpSessionInit(): void
-  wpSessionGet(): object
-  wpSessionSet(context: object): object
+  // wpContextApply(
+  //   context: unknown,
+  //   apply: WpDestination | WpDestinations
+  // ): void
+  // wpContextBuild(
+  //   config: WpContextConfigs | WpContextConfig
+  // ): unknown
+  // wpSessionInit(): void
+  // wpSessionGet(): object
+  // wpSessionSet(context: object): object
   html: tmHtml
   defaults: tmDefaults
 }

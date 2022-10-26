@@ -90,7 +90,7 @@ We want to build an object based on web page context dynamically. We pull contex
 
 ## Development
 
-See the [monorepo readme](https://www.github.com/erichosick/tm-support).
+See the [monorepo readme](https://www.github.com/erichosick/trkm).
 
 ## License
 

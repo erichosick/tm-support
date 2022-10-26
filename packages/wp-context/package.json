@@ -10,9 +10,9 @@
     "html context"
   ],
   "author": "Eric Hosick <erichosick@gmail.com>",
-  "homepage": "https://github.com/erichosick/tm-support/tree/main/packages/wp-context",
+  "homepage": "https://github.com/erichosick/trkm/tree/main/packages/wp-context",
   "bugs": {
-    "url": "https://github.com/erichosick/tm-support/issues",
+    "url": "https://github.com/erichosick/trkm/issues",
     "email": "erichosick@gmail.com"
   },
   "license": "SEE LICENSE IN LICENSE.md",
@@ -37,7 +37,6 @@
     "test:browsers:watch": "karma start karma.conf.ts"
   },
   "dependencies": {
-    "object-json-path": "^0.1.0",
     "ts-deepmerge": "^4.0.0"
   },
   "devDependencies": {
